@@ -1,0 +1,29 @@
+{
+  "name": "tags-analyzing",
+  "version": "1.0.0",
+  "description": "This is repo is to create a tags functionality. So efficiently we can add jsonb tags and how we can manage .",
+  "homepage": "https://github.com/dilshand3/tags-analyzing#readme",
+  "bugs": {
+    "url": "https://github.com/dilshand3/tags-analyzing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilshand3/tags-analyzing.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "ts-node seed.ts"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "pg": "^8.21.0",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.20.0"
+  }
+}
