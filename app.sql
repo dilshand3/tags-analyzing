@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS documents (
 
 CREATE INDEX IF NOT EXISTS idx_documents_tags_gin
     ON documents
-    USING GIN (tags);
+    USING GIN((tags::text) gin_trgm_ops);;
 
 CREATE INDEX IF NOT EXISTS idx_documents_title_trgm
     ON documents
