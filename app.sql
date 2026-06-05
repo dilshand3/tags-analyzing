@@ -12,3 +12,9 @@ CREATE TABLE IF NOT EXISTS documents (
 CREATE INDEX IF NOT EXISTS idx_documents_tags_gin
 ON documents
 USING GIN(tags);
+
+DROP INDEX IF EXISTS idx_documents_tags_gin;
+
+CREATE INDEX IF NOT EXISTS idx_documents_tags_gin
+ON documents
+USING GIN(tags jsonb_path_ops);
