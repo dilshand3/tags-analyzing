@@ -12,7 +12,7 @@ const DB_CONFIG = {
 };
 
 const TOTAL_ROWS   = 3000000;   
-const BATCH_SIZE   = 5_000;      
+const BATCH_SIZE   = 10_000;      
 const LOG_INTERVAL = 100_000;
 
 
